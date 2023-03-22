@@ -94,36 +94,84 @@ button:focus{
   <script>
 	const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "javascript",
+        question: "The cross-sections for a highway is taken at:",
+        a: "Right angle to the centre line",
+        b: "30 metres apart",
+        c: "Intermediate points having abrupt change in gradient",
+        d: "All the above",
         correct: "d",
     },
     {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
-        correct: "b",
-    },
-    {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: " In the lever of third order, load W, effort P and fulcrum F are oriented as follows",
+        a: "W between P and F",
+        b: "F between W and P",
+        c: "P between W and F",
+        d: "W, P and F all on one side",
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
+        question: " As compared to English bond, double Flemish bond is",
+        a: "stronger",
+        b: "More compact",
+        c: "costly",
         d: "none of the above",
         correct: "b",
+    },
+    {
+        question: "Which one of the following represents an activity",
+        a: " Excavation for foundation",
+        b: "Curing of concrete",
+        c: " Setting of question paper",
+        d: "All the above",
+        correct: "d",
+    },
+    {
+        question: " A circular column section is generally not used in actual practice because",
+        a: "It is uneconomical",
+        b: "It cannot carry the load safely",
+        c: "It is difficult to connect beams to the round sections",
+        d: "All the above",
+        correct: "c",
+    },
+    {
+        question: "Which of the following methods is more suitable for the determination of permeability of clayey soil",
+        a: "Constant head method",
+        b: "Falling head method",
+        c: "Horizontal permeability test",
+        d: "none of the above",
+        correct: "b",
+    },
+    {
+        question: "The greater clear dimension of web of thickness 't' should not exceed",
+        a: "180t",
+        b: "200t",
+        c: "240t",
+        d: "270t",
+        correct: "d",
+    },
+    {
+        question: "The point about which combined motion of rotation and translation of a rigid body takes place, is known as",
+        a: " Virtual centre",
+        b: "Instantaneous centre",
+        c: "Instantaneous axis",
+        d: " Point of rotation",
+        correct: "b",
+    },
+    {
+        question: "Dilution method of disposing of sewage, is not preferred to",
+        a: "When sewage is fresh",
+        b: "When diluting water has high dissolved oxygen content",
+        c: "When diluting water is used for water supply near the point of sewage disposed",
+        d: "When the diluting water is having flow currents",
+        correct: "c",
+    },
+    {
+        question: "Average annual rainfall at any station is the average of annual rainfall over a period of",
+        a: "7 yrs",
+        b: "14 yrs",
+        c: "28 yrs",
+        d: "35 yrs",
+        correct: "d",
     },
 ];
 const quiz= document.getElementById('quiz')
@@ -133,6 +181,12 @@ const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
+const e_text = document.getElementById('a_text')
+const f_text = document.getElementById('a_text')
+const g_text = document.getElementById('a_text')
+const h_text = document.getElementById('a_text')
+const i_text = document.getElementById('a_text')
+const j_text = document.getElementById('a_text')
 const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
@@ -145,6 +199,13 @@ function loadQuiz() {
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
+    e_text.innerText = currentQuizData.e
+    f_text.innerText = currentQuizData.f
+    g_text.innerText = currentQuizData.g
+    h_text.innerText = currentQuizData.h
+    i_text.innerText = currentQuizData.i
+    j_text.innerText = currentQuizData.j
+	
 }
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
